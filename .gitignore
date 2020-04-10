@@ -1,5 +1,5 @@
 /node_modules
 /dist
-/uploads/images/.*
+/uploads/images/**
 .env
 .txt
