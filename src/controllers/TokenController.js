@@ -35,7 +35,7 @@ class TokenController {
       expiresIn: process.env.TOKEN_EXPIRATION,
     });
 
-    res.json({ token: token });
+    res.json({ token, user: { name: user.name, id, email } });
   }
 }
 export default new TokenController();
