@@ -38,7 +38,7 @@ class App {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use(
-      '/images/',
+      '/api/images/',
       express.static(resolve(__dirname, '..', 'uploads', 'images'))
     );
   }
