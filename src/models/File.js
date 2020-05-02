@@ -25,7 +25,7 @@ export default class File extends Model {
         url: {
           type: Sequelize.VIRTUAL,
           get() {
-            return `${process.env.APP_URL}/images/${this.getDataValue(
+            return `${process.env.APP_URL}/api/images/${this.getDataValue(
               'filename'
             )}`;
           },
