@@ -14,9 +14,9 @@ import studentRoutes from './routes/studentRoutes';
 import fileRoutes from './routes/fileRoutes';
 
 const whiteList = [
-  'http://35.247.215.31',
   'http://localhost:3000',
   'http://christeffer.tech',
+  'https://christeffer.tech',
 ];
 
 const corsOptions = {
