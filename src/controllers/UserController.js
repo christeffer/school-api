@@ -40,7 +40,7 @@ class UserController {
       const user = await User.findByPk(req.userId);
 
       if (!user) {
-        return res.status(400).json({ errors: ['User not found'] });
+        return res.status(404).json({ errors: ['User not found'] });
       }
       const updatedUser = await user.update(req.body);
       // filter only some fields to return
@@ -58,7 +58,7 @@ class UserController {
       const user = await User.findByPk(req.userId);
 
       if (!user) {
-        return res.status(400).json({ errors: ['User not found'] });
+        return res.status(404).json({ errors: ['User not found'] });
       }
 
       await user.destroy();
