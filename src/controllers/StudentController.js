@@ -60,7 +60,7 @@ class StudentController {
       });
 
       if (!student) {
-        return res.status(204).json({
+        return res.status(404).json({
           errors: ['Student not found'],
         });
       }
@@ -86,7 +86,7 @@ class StudentController {
       const student = await Student.findByPk(id);
 
       if (!student) {
-        return res.status(204).json({
+        return res.status(404).json({
           errors: ['Student not found'],
         });
       }
@@ -112,7 +112,7 @@ class StudentController {
       const student = await Student.findByPk(id);
 
       if (!student) {
-        return res.status(204).json({
+        return res.status(404).json({
           errors: ['Student not found'],
         });
       }
